@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## common-bean
 
 You can use the [editor on GitHub](https://github.com/zhouhailin/common-bean/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
