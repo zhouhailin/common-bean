@@ -9,8 +9,15 @@ You can use the [editor on GitHub](https://github.com/zhouhailin/common-bean/edi
 - [ ] 反射实现 - 1.2.x
 - [ ] 动态代理实现 1.3.x
 
-
 ## 快速使用
+
+- java version
+
+```
+java version "1.8.0_181"
+Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
+```
 
 - ### maven
 
