@@ -25,9 +25,9 @@ import link.thingscloud.common.bean.util.Assert;
 /**
  * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
  */
-public class SimpleBeanCopierCreatorImpl<S, T> extends AbstractBeanCopierCreator<S, T> {
+public class FastJsonBeanCopierCreatorImpl<S, T> extends AbstractBeanCopierCreator<S, T> {
 
-    public SimpleBeanCopierCreatorImpl(Class<S> sourceClazz, Class<T> targetClazz, BeanCopierOptions options) {
+    public FastJsonBeanCopierCreatorImpl(Class<S> sourceClazz, Class<T> targetClazz, BeanCopierOptions options) {
         super(sourceClazz, targetClazz, options);
     }
 

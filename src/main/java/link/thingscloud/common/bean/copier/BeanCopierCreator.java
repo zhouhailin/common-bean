@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package link.thingscloud.common.bean.copier.creator;
+package link.thingscloud.common.bean.copier;
 
 /**
  * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
@@ -29,7 +29,7 @@ public interface BeanCopierCreator<S, T> {
         /**
          * FastJSON
          */
-        SIMPLE
+        FAST_JSON
     }
 
     /**

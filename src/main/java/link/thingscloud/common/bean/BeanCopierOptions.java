@@ -16,7 +16,7 @@
 
 package link.thingscloud.common.bean;
 
-import link.thingscloud.common.bean.copier.creator.BeanCopierCreator;
+import link.thingscloud.common.bean.copier.BeanCopierCreator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class BeanCopierOptions {
 
     private List<String> ignoreFields = new ArrayList<>(8);
 
-    private BeanCopierCreator.Impl beanCopierCreatorImpl = BeanCopierCreator.Impl.SIMPLE;
+    private BeanCopierCreator.Impl beanCopierCreatorImpl = BeanCopierCreator.Impl.FAST_JSON;
 
     private BeanCopierOptions() {
     }

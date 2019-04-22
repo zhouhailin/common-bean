@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package link.thingscloud.common.bean.copier.factory;
+package link.thingscloud.common.bean.copier;
 
 import link.thingscloud.common.bean.BeanCopierOptions;
 import link.thingscloud.common.bean.copier.creator.AbstractBeanCopierCreator;
 import link.thingscloud.common.bean.copier.creator.impl.DefaultBeanCopierCreatorImpl;
-import link.thingscloud.common.bean.copier.creator.impl.SimpleBeanCopierCreatorImpl;
+import link.thingscloud.common.bean.copier.creator.impl.FastJsonBeanCopierCreatorImpl;
 import link.thingscloud.common.bean.util.Assert;
 
 /**
@@ -40,8 +40,8 @@ public class BeanCopierFactory {
         switch (options.beanCopierCreatorImpl()) {
             case DEFAULT:
                 return new DefaultBeanCopierCreatorImpl<>(sourceClazz, targetClazz, options);
-            case SIMPLE:
-                return new SimpleBeanCopierCreatorImpl<>(sourceClazz, targetClazz, options);
+            case FAST_JSON:
+                return new FastJsonBeanCopierCreatorImpl<>(sourceClazz, targetClazz, options);
             default:
                 return new DefaultBeanCopierCreatorImpl<>(sourceClazz, targetClazz, options);
         }

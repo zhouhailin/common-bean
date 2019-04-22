@@ -16,8 +16,8 @@
 
 package link.thingscloud.common.bean;
 
-import link.thingscloud.common.bean.copier.creator.BeanCopierCreator;
-import link.thingscloud.common.bean.copier.factory.BeanCopierFactory;
+import link.thingscloud.common.bean.copier.BeanCopierCreator;
+import link.thingscloud.common.bean.copier.BeanCopierFactory;
 
 /**
  * Bean对象复制
