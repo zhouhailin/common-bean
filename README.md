@@ -9,10 +9,10 @@
 
 ## 版本迭代
 
-- [x] fastjson实现 - 1.0.x
-- [ ] 注解实现 - 1.1.x
-- [ ] 反射实现 - 1.2.x
-- [ ] 动态代理实现 1.3.x
+- [x] fastjson实现 - 0.1.x
+- [ ] 注解实现 - 0.2.x
+- [ ] 反射实现 - 0.3.x
+- [ ] 动态代理实现 0.4.x
 
 ## 快速使用
 
@@ -30,7 +30,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
 <dependency>
   <groupId>link.thingscloud</groupId>
   <artifactId>common-bean</artifactId>
-  <version>1.0.0.BETA</version>
+  <version>${common-bean.version}</version>
 </dependency>
 ```
 
