@@ -1,5 +1,8 @@
 # common-bean
 
+[![Build Status](rakefile/zhouhailin/common-bean.svg?branch=master)](https://travis-ci.org/zhouhailin/common-bean)
+
+
 ## 版本迭代
 
 - [x] fastjson实现 - 1.0.x
