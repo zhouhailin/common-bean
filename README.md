@@ -1,5 +1,6 @@
 # common-bean
 
+[![Jdk Version](https://img.shields.io/badge/JDK-1.8-green.svg)](https://img.shields.io/badge/JDK-1.8-green.svg)
 [![Build Status](https://travis-ci.org/zhouhailin/common-bean.svg?branch=master)](https://travis-ci.org/zhouhailin/common-bean)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
