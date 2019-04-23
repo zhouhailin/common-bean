@@ -3,7 +3,7 @@
 [![Jdk Version](https://img.shields.io/badge/JDK-1.8-green.svg)](https://img.shields.io/badge/JDK-1.8-green.svg)
 [![Build Status](https://travis-ci.org/zhouhailin/common-bean.svg?branch=master)](https://travis-ci.org/zhouhailin/common-bean)
 [![Coverage Status](https://img.shields.io/codecov/c/github/zhouhailin/common-bean/master.svg)](https://codecov.io/github/zhouhailin/common-bean?branch=master&view=all#sort=coverage&dir=asc)  
-[![GitHub release](https://img.shields.io/github/releases/zhouhailin/common-bean.svg)](https://github.com/zhouhailin/common-bean/releases)
+[![GitHub release](https://img.shields.io/github/release/zhouhailin/common-bean.svg)](https://github.com/zhouhailin/common-bean/releases)
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## 版本迭代
