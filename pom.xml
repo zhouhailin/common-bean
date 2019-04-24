@@ -36,6 +36,20 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <scm>
+        <url>git@github.com:zhouhailin/common-bean.git</url>
+        <connection>scm:git:git@github.com:zhouhailin/common-bean.git</connection>
+        <developerConnection>scm:git:git@github.com:zhouhailin/common-bean.git</developerConnection>
+        <tag>0.1.0-BETA1</tag>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <dependencies>
         <dependency>
