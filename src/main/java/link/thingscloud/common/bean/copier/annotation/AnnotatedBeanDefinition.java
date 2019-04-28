@@ -20,4 +20,8 @@ package link.thingscloud.common.bean.copier.annotation;
  * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
  */
 public class AnnotatedBeanDefinition implements BeanDefinition {
+    @Override
+    public Class<?> clazz() {
+        return null;
+    }
 }
