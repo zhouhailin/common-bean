@@ -14,18 +14,15 @@
  * limitations under the License.
  */
 
-package link.thingscloud.common.bean.copier.creator;
+package link.thingscloud.common.bean;
 
-import link.thingscloud.common.bean.copier.BeanCopierCreator;
+import lombok.Data;
 
 /**
  * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
  */
-public abstract class AbstractBeanCopierCreator<S, T> implements BeanCopierCreator<S, T> {
+@Data
+public class BeanTargetSimpleObject {
 
-    protected final BeanMapper<S, T> beanMapper;
-
-    protected AbstractBeanCopierCreator(BeanMapper<S, T> beanMapper) {
-        this.beanMapper = beanMapper;
-    }
+    private String name2;
 }

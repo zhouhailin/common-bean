@@ -16,16 +16,20 @@
 
 package link.thingscloud.common.bean.copier.creator;
 
-import link.thingscloud.common.bean.copier.BeanCopierCreator;
+import link.thingscloud.common.bean.BeanCopierOptions;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
  */
-public abstract class AbstractBeanCopierCreator<S, T> implements BeanCopierCreator<S, T> {
+@Data
+@Accessors(chain = true)
+public class BeanMapper<S, T> {
 
-    protected final BeanMapper<S, T> beanMapper;
+    private Class<S> sourceClazz;
+    private Class<T> targetClazz;
+    private BeanCopierOptions options;
 
-    protected AbstractBeanCopierCreator(BeanMapper<S, T> beanMapper) {
-        this.beanMapper = beanMapper;
-    }
+
 }

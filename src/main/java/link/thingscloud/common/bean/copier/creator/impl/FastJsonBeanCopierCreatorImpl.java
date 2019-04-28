@@ -18,8 +18,8 @@ package link.thingscloud.common.bean.copier.creator.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import link.thingscloud.common.bean.BeanCopierOptions;
 import link.thingscloud.common.bean.copier.creator.AbstractBeanCopierCreator;
+import link.thingscloud.common.bean.copier.creator.BeanMapper;
 import link.thingscloud.common.bean.util.Assert;
 
 /**
@@ -27,15 +27,15 @@ import link.thingscloud.common.bean.util.Assert;
  */
 public class FastJsonBeanCopierCreatorImpl<S, T> extends AbstractBeanCopierCreator<S, T> {
 
-    public FastJsonBeanCopierCreatorImpl(Class<S> sourceClazz, Class<T> targetClazz, BeanCopierOptions options) {
-        super(sourceClazz, targetClazz, options);
+    public FastJsonBeanCopierCreatorImpl(BeanMapper beanMapper) {
+        super(beanMapper);
     }
 
     @Override
     public S copy(S source) {
         JSONObject sourceObject = (JSONObject) JSONObject.toJSON(source);
-        options.ignoreFields().forEach(sourceObject::remove);
-        return JSON.parseObject(sourceObject.toJSONString(), sourceClazz);
+        beanMapper.getOptions().ignoreFields().forEach(sourceObject::remove);
+        return JSON.parseObject(sourceObject.toJSONString(), beanMapper.getSourceClazz());
     }
 
     @Override
@@ -45,8 +45,8 @@ public class FastJsonBeanCopierCreatorImpl<S, T> extends AbstractBeanCopierCreat
 
         JSONObject sourceObject = (JSONObject) JSONObject.toJSON(source);
         JSONObject targetObject = (JSONObject) JSONObject.toJSON(target);
-        options.ignoreFields().forEach(sourceObject::remove);
+        beanMapper.getOptions().ignoreFields().forEach(sourceObject::remove);
         targetObject.putAll(sourceObject);
-        return JSON.parseObject(targetObject.toJSONString(), targetClazz);
+        return JSON.parseObject(targetObject.toJSONString(), beanMapper.getTargetClazz());
     }
 }

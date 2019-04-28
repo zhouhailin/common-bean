@@ -18,6 +18,7 @@ package link.thingscloud.common.bean.copier;
 
 import link.thingscloud.common.bean.BeanCopierOptions;
 import link.thingscloud.common.bean.copier.creator.AbstractBeanCopierCreator;
+import link.thingscloud.common.bean.copier.creator.BeanMapper;
 import link.thingscloud.common.bean.copier.creator.impl.DefaultBeanCopierCreatorImpl;
 import link.thingscloud.common.bean.copier.creator.impl.FastJsonBeanCopierCreatorImpl;
 import link.thingscloud.common.bean.util.Assert;
@@ -37,13 +38,18 @@ public class BeanCopierFactory {
         Assert.notNull(sourceClazz, "Source Class must not be null");
         Assert.notNull(targetClazz, "Target Class must not be null");
 
+        BeanMapper<S, T> beanMapper = new BeanMapper<S, T>()
+                .setSourceClazz(sourceClazz)
+                .setTargetClazz(targetClazz)
+                .setOptions(options);
+
         switch (options.beanCopierCreatorImpl()) {
             case DEFAULT:
-                return new DefaultBeanCopierCreatorImpl<>(sourceClazz, targetClazz, options);
+                return new DefaultBeanCopierCreatorImpl<>(beanMapper);
             case FAST_JSON:
-                return new FastJsonBeanCopierCreatorImpl<>(sourceClazz, targetClazz, options);
+                return new FastJsonBeanCopierCreatorImpl<>(beanMapper);
             default:
-                return new DefaultBeanCopierCreatorImpl<>(sourceClazz, targetClazz, options);
+                return new DefaultBeanCopierCreatorImpl<>(beanMapper);
         }
     }
 

@@ -16,8 +16,8 @@
 
 package link.thingscloud.common.bean.copier.creator.impl;
 
-import link.thingscloud.common.bean.BeanCopierOptions;
 import link.thingscloud.common.bean.copier.creator.AbstractBeanCopierCreator;
+import link.thingscloud.common.bean.copier.creator.BeanMapper;
 import link.thingscloud.common.bean.util.Assert;
 
 /**
@@ -25,8 +25,8 @@ import link.thingscloud.common.bean.util.Assert;
  */
 public class DefaultBeanCopierCreatorImpl<S, T> extends AbstractBeanCopierCreator<S, T> {
 
-    public DefaultBeanCopierCreatorImpl(Class<S> sourceClazz, Class<T> targetClazz, BeanCopierOptions options) {
-        super(sourceClazz, targetClazz, options);
+    public DefaultBeanCopierCreatorImpl(BeanMapper beanMapper) {
+        super(beanMapper);
     }
 
     @Override
