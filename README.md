@@ -1,5 +1,6 @@
 # common-bean
 
+[![Gitter](https://badges.gitter.im/zhouhailin/common-bean.svg)](https://gitter.im/zhouhailin/common-bean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  
 [![Jdk Version](https://img.shields.io/badge/JDK-1.8-green.svg)](https://img.shields.io/badge/JDK-1.8-green.svg)
 [![Build Status](https://travis-ci.org/zhouhailin/common-bean.svg?branch=master)](https://travis-ci.org/zhouhailin/common-bean)
 [![Coverage Status](https://img.shields.io/codecov/c/github/zhouhailin/common-bean/master.svg)](https://codecov.io/github/zhouhailin/common-bean?branch=master&view=all#sort=coverage&dir=asc)  
