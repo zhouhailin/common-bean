@@ -27,7 +27,7 @@ import link.thingscloud.common.bean.util.Assert;
  */
 public class FastJsonBeanCopierCreatorImpl<S, T> extends AbstractBeanCopierCreator<S, T> {
 
-    public FastJsonBeanCopierCreatorImpl(BeanMapper beanMapper) {
+    public FastJsonBeanCopierCreatorImpl(BeanMapper<S, T> beanMapper) {
         super(beanMapper);
     }
 

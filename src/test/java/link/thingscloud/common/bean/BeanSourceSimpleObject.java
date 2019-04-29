@@ -25,7 +25,7 @@ import lombok.Data;
 @Data
 public class BeanSourceSimpleObject {
 
-    @BeanCopierField()
+    @BeanCopierField(targetName = "name2")
     private String name1;
 
 }

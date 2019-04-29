@@ -19,23 +19,20 @@ package link.thingscloud.common.bean.copier.annotation;
 import java.lang.annotation.*;
 
 /**
- *
  * 复制 A 对象 为 B 对象
  * 对象 B 上注解 - 在目标对象字段注解
- * @BeanCopierField(
- *  sourceName = "name1", defaultSourceValue = "1", ignoreSource = true
- *  )
+ *
+ * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
+ * @BeanCopierField( sourceName = "name1", defaultSourceValue = "1", ignoreSource = true
+ * )
  * 复制 B 对象 为 A 对象
  * 对象 B 上注解 - 在源始对象字段注解
- * @BeanCopierField(
- *  targetName = "name1", defaultTargetValue = "1", ignoreTarget = true
- *  )
- *
+ * @BeanCopierField( targetName = "name1", defaultTargetValue = "1", ignoreTarget = true
+ * )
+ * <p>
  * 复制 A 对象 为 B 对象
  * 1、如果A对象上有target优先级高于 B 对象上source
  * 2、如果B对象上有source优先级高于 A 对象上target
- *
- * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
@@ -46,7 +43,7 @@ public @interface BeanCopierField {
 
     String sourceName() default "";
 
-    String defaultSourceValue();
+    String defaultSourceValue() default "";
 
     boolean ignoreSource() default false;
 
@@ -54,7 +51,7 @@ public @interface BeanCopierField {
 
     String targetName() default "";
 
-    String defaultTargetValue();
+    String defaultTargetValue() default "";
 
     boolean ignoreTarget() default false;
 
