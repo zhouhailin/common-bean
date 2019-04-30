@@ -22,7 +22,7 @@
 
     <groupId>link.thingscloud</groupId>
     <artifactId>common-bean</artifactId>
-    <version>0.1.0-BETA1</version>
+    <version>0.2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>common-bean-${project.version}</name>
@@ -43,7 +43,7 @@
         <url>git@github.com:zhouhailin/common-bean.git</url>
         <connection>scm:git:git@github.com:zhouhailin/common-bean.git</connection>
         <developerConnection>scm:git:git@github.com:zhouhailin/common-bean.git</developerConnection>
-        <tag>0.1.0-BETA1</tag>
+        <tag>0.2.0-SNAPSHOT</tag>
     </scm>
 
     <licenses>
