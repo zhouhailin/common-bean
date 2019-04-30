@@ -23,12 +23,11 @@ import java.lang.annotation.*;
  * 对象 B 上注解 - 在目标对象字段注解
  *
  * @author : <a href="mailto:ant.zhou@aliyun.com">zhouhailin</a>
- * @BeanCopierField( sourceName = "name1", defaultSourceValue = "1", ignoreSource = true
- * )
+ *
+ * BeanCopierField( sourceName = "name1", defaultSourceValue = "1", ignoreSource = true)
  * 复制 B 对象 为 A 对象
  * 对象 B 上注解 - 在源始对象字段注解
- * @BeanCopierField( targetName = "name1", defaultTargetValue = "1", ignoreTarget = true
- * )
+ * BeanCopierField( targetName = "name1", defaultTargetValue = "1", ignoreTarget = true)
  * <p>
  * 复制 A 对象 为 B 对象
  * 1、如果A对象上有target优先级高于 B 对象上source

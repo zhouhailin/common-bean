@@ -26,6 +26,9 @@
     <packaging>jar</packaging>
 
     <name>common-bean-${project.version}</name>
+    <description>freeswitch event socket library on netty 4.1</description>
+    <url>https://open.thingscloud.link/common-bean</url>
+    <inceptionYear>2019</inceptionYear>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,6 +54,12 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>zhouhailin</name>
+            <email>ant.zhou@aliyun.com</email>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -121,6 +130,19 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
@@ -160,5 +182,17 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>sonatype-release</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>sonatype-snapshot</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
